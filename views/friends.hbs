@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = 'utf-8'>
+        <title>Some web</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container"> 
+        <div class = "row">
+            
+        {{#if friendsData}}
+            <div class="col-sm-offset-1">
+                {{{friendsData}}}
+            </div>
+            <div class="clearfix"></div>
+            <div class="center-block">
+                <a href="/logout"><button type="button"  class="btn btn-primary btn-lg center-block">Logout</button></a>
+            </div>
+         {{else}}
+            <h1 class="text-center">Welcome! Please log in.</h1>
+            <a href="/auth/vk"><button type="button"  class="btn btn-primary btn-lg center-block">
+            <i class="glyphicon glyphicon-user" aria-hidden="true"></i> Log in with VK </button></a>
+         {{/if}}
+         </div>
+      </div>
+    </body>    
+</html>

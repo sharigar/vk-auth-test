@@ -1,0 +1,22 @@
+{
+  "name": "webim",
+  "version": "1.0.0",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "cookie-parser": "^1.4.3",
+    "express": "4.14.0",
+    "express-session": "^1.15.1",
+    "hbs": "^4.0.1",
+    "passport": "0.3.2",
+    "passport-vkontakte": "^0.3.2",
+    "request": "^2.79.0"
+  },
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
